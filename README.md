@@ -1,4 +1,4 @@
-# 7-vue-project
+# dynamic-and-asynchronous-components
 
 ## Project setup
 ```
