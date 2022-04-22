@@ -1,4 +1,4 @@
-# dynamic-and-asynchronous-components
+# dynamic-and-asynchronous-components-learn
 
 ## Project setup
 ```
