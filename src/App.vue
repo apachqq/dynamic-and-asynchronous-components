@@ -21,34 +21,12 @@
 </template>
 
 <script>
-import AppTextOne from './components/AppTextOne'
-import AppTextTwo from './components/AppTextTwo'
+import AppTextOne from '@/components/AppTextOne'
+import AppTextTwo from '@/components/AppTextTwo'
+import AppMixin from '@/mixins/AppMixin'
 
 export default {
-  data () {
-    return {
-      active: 'one' // two
-    }
-  },
-  computed: {
-    // componentName () {
-    //   return 'app-text-' + this.active
-    // },
-    componentName: {
-      get () {
-        return 'app-text-' + this.active
-      },
-      set (value) {
-
-      }
-    },
-    oneColor () {
-      return this.active === 'one' ? 'primary' : ''
-    },
-    twoColor () {
-      return this.active === 'two' ? 'primary' : ''
-    }
-  },
+  mixins: [AppMixin],
   components: {
     AppTextOne,
     AppTextTwo
